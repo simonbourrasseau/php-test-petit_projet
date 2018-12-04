@@ -21,7 +21,7 @@ class person {
 	}
 
 	public function speak() {
-		return "Hello my name is" . $this->firstname . " " . $this->lastname;
+		return "Hello my name is " . $this->firstname . " " . $this->lastname;
 	}
 }
 
@@ -39,10 +39,11 @@ var_dump($person1->speak());
 //var_dump($person1->getFirstname());
 //var_dump($person1->getLastname());
 
-//$person2 = new person();
+$person2 = new person();
 //$person2->firstname = "Jane";
 //$person2->lastname = "die";
-//$person2->setFirstname("Jane");
-//$person2->setLastname("Die");
+$person2->setFirstname("Jane");
+$person2->setLastname("Die");
 
+var_dump($person2->speak());
 //var_dump($person2);
